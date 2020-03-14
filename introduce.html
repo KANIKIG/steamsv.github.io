@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>ss</title>
+		<title>产品介绍</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -40,26 +40,23 @@
 
 									<hr class="major" />
 
-									<h2>一、ssr方案</h2>
-									<p>1.授权vps的公网IP。</p>
-									<p>2.过不知道公网IP，可执行curl ip.sb 获取。</p>
-									<p>3.然后修改系统DNS。</p>
-									<p>4.修改完成重启服务端。</p>
-									<h3>注意</h3>
-									<p>1.部分系统会自行重置系统DNS导致解锁失败。</p>
-									<p>2.可使用chattr +i进行文件加锁，解锁chattr -i，部分系统加锁会提示错误等信息，自行百度谷歌</p>
-									<h3>推荐工具</h3>
-									<li><a href="dnsmasq">常见解锁工具</a></li>
+									<h2>一、有什么用途? 如何实现?</h2>
+									<p>1.该产品基于 DNS 与 SNIProxy 技术独立开发，通过配置服务端搭建一台 DNS 服务器，用户设置该 DNS ，将流媒体视频网站的域名解析到该服务器，同时通过 SNI Proxy 反代流媒体视频服务器，实现免代理观看 NetFlix/TVB/HULU 等。</p>
+									<p>2.通过连接数据库，实现动态增删 IP/DDNS 地址。后端拉取数据库授权IP，目前有数据库三个保证后端运行</p>
 
 									<hr class="major" />
 
-									<h2>二、ss方案</h2>
-									<p>1.授权vps的公网IP。</p>
-									<p>2.过不知道公网IP，可执行curl ip.sb 获取。</p>
-									<p>3.打开ss的服务端配置文件。</p>
-									<p>4.观察是否有dns项，有则修改，没有则使用ssr的方法</p>
-									<p>5.修改完成重启服务端。</p>
-
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/qianduan.jpg" alt="" /></a>
+											<p>产品运行原理</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/houduan.jpg" alt="" /></a>
+											<p>后端运行原理</p>
+										</article>
+									</div>
+									
 								</section>
 
 						</div>
