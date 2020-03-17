@@ -35,30 +35,28 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>开始</h1>
+										<h1>dnsmasq分流详解</h1>
 									</header>
 
 									<hr class="major" />
 
-									<h2>一、ssr方案</h2>
-									<p>1.授权vps的公网IP。</p>
-									<p>2.过不知道公网IP，可执行curl ip.sb 获取。</p>
-									<p>3.然后修改系统DNS。</p>
-									<p>4.修改完成重启服务端。</p>
+									<h2>一、dnsmasq是什么?</h2>
+									<p>Dnsmasq为小型网络提供网络基础设施：DNS，DHCP，路由器通告和网络引导。它被设计为轻量级且占用空间小，适用于资源受限的路由器和防火墙。它还被广泛用于智能手机和便携式热点的共享，并支持虚拟化框架中的虚拟网络。支持的平台包括Linux（带有glibc和uclibc），Android，* BSD和Mac OS X. Dnsmasq包含在大多数Linux发行版以及FreeBSD，OpenBSD和NetBSD的端口系统中。Dnsmasq提供完整的IPv6支持</p>
+									<h3>本站dnsmasq分流脚本有什么作用？</h3>
+									<p>1.根据系统安装dnsmasq。</p>
+									<p>2.默认写入netflix相关的规则并指定DNS。</p>
+									<p>3.修改系统DNS为127.0.0.1，作用是使网络域名解析在dnsmasq上进行。</p>
 									<h3>注意</h3>
-									<p>1.部分系统会自行重置系统DNS导致解锁失败。</p>
+									<p>1.部分系统会自行重置系统DNS。</p>
 									<p>2.可使用chattr +i进行文件加锁，解锁chattr -i，部分系统加锁会提示错误等信息，自行百度谷歌</p>
-									<h3>推荐工具</h3>
-									<li><a href="dnsmasq">常见解锁工具</a></li>
 
 									<hr class="major" />
 
-									<h2>二、ss方案</h2>
-									<p>1.授权vps的公网IP。</p>
-									<p>2.过不知道公网IP，可执行curl ip.sb 获取。</p>
-									<p>3.打开ss的服务端配置文件。</p>
-									<p>4.观察是否有dns项，有则修改，没有则使用ssr的方法</p>
-									<p>5.修改完成重启服务端。</p>
+									<h2>二、修改dnsmasq的配置。</h2>
+									<p>1.打开/etc/dnsmasq.d/unlock.conf。</p>
+									<p>2.按照里面的格式自行添加删除修改。</p>
+									<p>3.修改完成重启dnsmasq。（重启命令systemctl restart dnsmasq）</p>
+									<p>4.最后重启科学服务端</p>
 
 								</section>
 
