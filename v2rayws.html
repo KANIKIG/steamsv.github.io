@@ -35,30 +35,16 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>开始</h1>
+										<h1>v2ray 纯ws协议 dns解锁 一键脚本</h1>
 									</header>
 
 									<hr class="major" />
 
-									<h2>一、ssr方案</h2>
-									<p>1.授权vps的公网IP。</p>
-									<p>2.过不知道公网IP，可执行curl ip.sb 获取。</p>
-									<p>3.然后修改系统DNS。</p>
-									<p>4.修改完成重启服务端。</p>
+									<h2>一、一键安装</h2>
+									<pre><code>wget https://steamsv.wiki/install_v2ray_ws_dnsmasq.sh && chmod +x install_v2ray_ws_dnsmasq.sh && ./install_v2ray_ws_dnsmasq.sh</code>
 									<h3>注意</h3>
 									<p>1.部分系统会自行重置系统DNS导致解锁失败。</p>
 									<p>2.可使用chattr +i进行文件加锁，解锁chattr -i，部分系统加锁会提示错误等信息，自行百度谷歌</p>
-									<h3>推荐工具</h3>
-									<li><a href="dnsmasq">常见解锁工具</a></li>
-
-									<hr class="major" />
-
-									<h2>二、ss方案</h2>
-									<p>1.授权vps的公网IP。</p>
-									<p>2.过不知道公网IP，可执行curl ip.sb 获取。</p>
-									<p>3.打开ss的服务端配置文件。</p>
-									<p>4.观察是否有dns项，有则修改，没有则使用ssr的方法</p>
-									<p>5.修改完成重启服务端。</p>
 
 								</section>
 
