@@ -35,30 +35,23 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1></h1>
+										<h1>分两步进行</h1>
 									</header>
 
 									<hr class="major" />
 
-									<h2>一、ssr方案</h2>
-									<p>1.授权vps的公网IP。</p>
-									<p>2.过不知道公网IP，可执行curl ip.sb 获取。</p>
-									<p>3.然后修改系统DNS。</p>
-									<p>4.修改完成重启服务端。</p>
-									<h3>注意</h3>
-									<p>1.部分系统会自行重置系统DNS导致解锁失败。</p>
-									<p>2.可使用chattr +i进行文件加锁，解锁chattr -i，部分系统加锁会提示错误等信息，自行百度谷歌</p>
-									<h3>推荐工具</h3>
-									<li><a href="dnsmasq">常见解锁工具</a></li>
+									<h2>一、安装v2ray</h2>
+									<p>1.执行安装代码。</p>
+									<pre><code>wget https://raw.githubusercontent.com/steamsv/v2ray-ws-tls/master/v2ray_ws_tls.sh && chmod +x v2ray_ws_tls.sh && ./v2ray_ws_tls.sh</code>
+									<p>2.安装成功后，确认是否可以使用。</p>
+									<p>3.可以使用，进行第二步。</p>
 
 									<hr class="major" />
 
-									<h2>二、ss方案</h2>
-									<p>1.授权vps的公网IP。</p>
-									<p>2.过不知道公网IP，可执行curl ip.sb 获取。</p>
-									<p>3.打开ss的服务端配置文件。</p>
-									<p>4.观察是否有dns项，有则修改，没有则使用ssr的方法</p>
-									<p>5.修改完成重启服务端。</p>
+									<h2>二、使用dnsmasq分流</h2>
+									<p>1.执行产品控制面板下的dnsmasq分流脚本。</p>
+									<p>2.想看哪个区资源就用哪个节点下面的。</p>
+									<p>3.注意看dnsmasq说明。</p>
 
 								</section>
 
