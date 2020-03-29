@@ -41,8 +41,11 @@
 										<p></p>
 										<p>注意</p>
 										<p>1.部分系统会自行重置系统DNS导致解锁失败。</p>
-                                        <p>2.可使用chattr +i进行文件加锁，解锁chattr -i</p>
-                                        <p>执行chattr +i /etc/resolv.conf加锁</p>
+                                        <p>2.可给系统DNS配置文件上锁</p>
+										<p>上锁</p>
+										<pre><code>chattr +i /etc/resolv.conf</code>
+										<p>解锁</p>
+										<pre><code>chattr -i /etc/resolv.conf</code>
 									</header>
 
 									<hr class="major" />
