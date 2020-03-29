@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>详细导航目录</title>
+		<title>开始</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -35,86 +35,20 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h2>点击红字即可访问阅读</h2>
+                                        <h2>服务端安装+DNS解锁</h2>
 									</header>
 
 									<hr class="major" />
 
-									<h3>一、服务简介</h3>
-									<li><a href="introduce.html">服务简介（必读）</a></li>
+									<h2>方案一</h2>
+									<p>编号:A1</p>
 									<p></p>
-									<h4>作用</h4>
-									<p>了解产品运行原理</p>
-
-									<hr class="major" />
-
-									<h3>二、服务条款（必读）</h3>
-									<li><a href="tos.html">服务条款（必读）</a></li>
-									<p></p>
-									<h4>作用</h4>
-									<p>了解使用产品需要遵守的规则条款</p>
-
-									<hr class="major" />
-
-									<h3>三、基于流媒体解锁的服务端安装脚本（选一即可）仅适用centos7</h3>
-									<li><a href="v2rayws.html">1.v2ray纯ws安装脚本</a></li>
-									<p></p>
-									<h4>作用</h4>
-									<p>该脚本基于v2ray官方安装+dnsmasq工具实现流媒体解锁分流，同时安装v2ray跟dnsmasq,并写入netflix规则。</p>
-									<li><a href="v2raynvwt.html">2.v2ray纯ws安装脚本</a></li>
-									<p></p>
-									<h4>作用</h4>
-									<p>该脚本基于v2ray官方安装并进行nginx+ws+ws伪装+dnsmasq工具实现流媒体解锁分流，安装v2ray+web网站伪装搭配dnsmasq分流,并写入netflix规则。</p>
-									<li><a href="trojan.html">3.trojan</a></li>
-									<p></p>
-									<h4>作用</h4>
-									<p>该脚本基于trojan+dnsmasq工具实现流媒体解锁分流，安装trojan搭配dnsmasq,并写入netflix规则。</p>
-
-									<hr class="major" />
-
-									<h3>四、部分服务端解锁原理（仅供参考）</h3>
-									<p>实现需要一定技术能力，如不理解请使用本站服务端一键脚本</p>
-									<li><a href="v2ray.html">v2ray解锁原理介绍</a></li>
-									<p></p>
-									<h4>作用</h4>
-									<p>了解v2ray内置DNS解锁原理设置</p>
-									<li><a href="ss.html">ss+ssr解锁原理</a></li>
-									<p></p>
-									<h4>作用</h4>
-									<p>了解该服务端如何设置，不推荐此服务端</p>
-
-									<hr class="major" />
-
-									<h3>五、各流媒体规则相关域名</h3>
-									<li><a href="rule.html">各流媒体域名规则列表</a></li>
-									<p></p>
-									<h4>作用</h4>
-									<p>了解对应流媒体有哪些域名规则</p>
-
-									<hr class="major" />
-
-									<h3>六、检查DNS服务器是否正常</h3>
-									<li><a href="nslookup.html">自助检查DNS服务器是否正常</a></li>
-									<p></p>
-									<h4>作用</h4>
-									<p>1.当服务端发生问题，可进行错误排除，确认问题出在哪一方</p>
-									<p>2.也可确认IP/DDNS是否授权正常</p>
-
-									<hr class="major" />
-
-									<h3>七、NETFLIX设备清晰度支持(待完善)</h3>
-									<li><a href="netflix.html">NETFLIX设备清晰度支持</a></li>
-									<p></p>
-									<h4>作用</h4>
-									<p>了解你所使用的设备能否播放哪个档次的清晰度</p>
-
-									<hr class="major" />
-
-									<h3>八、路由器设备支持列表（待完善）</h3>
-									<li><a href="router.html">路由器支持列表</a></li>
-									<p></p>
-									<h4>作用</h4>
-									<p>了解已测试过的路由器及固件</p>
+									<p>同时安装v2ray dnsmasq 并进行DNS解锁写入规则 修改规则参考dnsmasq分流（提供技术支持）</p>
+									<pre><code>wget https://steamsv.wiki/install_v2ray_ws_dnsmasq.sh && chmod +x install_v2ray_ws_dnsmasq.sh && ./install_v2ray_ws_dnsmasq.sh</code>
+									<h3>重要</h3>
+									<p>1.部分系统会自行重置系统DNS导致解锁失败。</p>
+                                    <p>2.可使用chattr +i进行文件加锁，解锁chattr -i，部分系统加锁会提示错误等信息，自行百度谷歌</p>
+                                    <p>执行chattr +i /etc/resolv.conf加锁</p>
 
 								</section>
 
