@@ -53,7 +53,16 @@
 
 									<hr class="major" />
 
-									<h2>二、自定义dnsmasq的配置。</h2>
+									<h2>二、脚本用法。</h2>
+									<p>编号:A2</p>
+									<p>1.最后DNS为变量。</p>
+									<pre><code>wget https://steamsv.wiki/unlock.sh && chmod +x unlock.sh && ./unlock.sh DNS</code>
+									<p>2.已测试过阿里云系统C7、D9、u6。推荐C7，其它两个或多或少有点小问题</p>
+									<p>3.如安装错误，请手动安装，注意报错（百度搜索找寻答案）</p>
+
+									<hr class="major" />
+
+									<h2>三、自定义dnsmasq的配置。</h2>
 									<p>1.打开/etc/dnsmasq.d/unlock.conf。</p>
 									<p>2.按照里面的格式自行添加删除修改。</p>
 									<p>3.修改完成重启dnsmasq。（重启命令systemctl restart dnsmasq）</p>
@@ -61,7 +70,7 @@
 
 									<hr class="major" />
 
-									<h2>三、不再使用dnsmasq。</h2>
+									<h2>四、不再使用dnsmasq。</h2>
 									<p>1.只需修改系统DNS为默认即可。</p>
 									<p>2.一般默认为8.8.8.8 8.8.4.4。</p>
 									<p>3.修改完成重启科学服务端</p>
