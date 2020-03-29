@@ -48,26 +48,32 @@
 									<hr class="major" />
 
 									<h2>方案一</h2>
-									<p>编号:A1</p>
 									<p></p>
-									<p>同时安装v2ray dnsmasq 并进行DNS解锁写入规则 修改规则参考dnsmasq分流（提供技术支持）</p>
+									<p>同时安装v2ray（纯ws协议） dnsmasq 并进行DNS解锁写入规则 修改规则参考dnsmasq分流（脚本编号:A1）</p>
 									<pre><code>wget https://steamsv.wiki/install_v2ray_ws_dnsmasq.sh && chmod +x install_v2ray_ws_dnsmasq.sh && ./install_v2ray_ws_dnsmasq.sh</code>
-									
-									<hr class="major" />
 
-									<h2>方案一</h2>
-									<p>编号:A1</p>
-									<p></p>
-									<p>同时安装v2ray dnsmasq 并进行DNS解锁写入规则 修改规则参考dnsmasq分流（提供技术支持）</p>
-									<pre><code>wget https://steamsv.wiki/install_v2ray_ws_dnsmasq.sh && chmod +x install_v2ray_ws_dnsmasq.sh && ./install_v2ray_ws_dnsmasq.sh</code>
-									
 									<hr class="major" />
-
-									<h2>方案一</h2>
-									<p>编号:A1</p>
+	
+									<h2>方案二</h2>
 									<p></p>
-									<p>同时安装v2ray dnsmasq 并进行DNS解锁写入规则 修改规则参考dnsmasq分流（提供技术支持）</p>
-									<pre><code>wget https://steamsv.wiki/install_v2ray_ws_dnsmasq.sh && chmod +x install_v2ray_ws_dnsmasq.sh && ./install_v2ray_ws_dnsmasq.sh</code>
+									<p>第一步安装trojan（脚本编号:A2）</p>
+									<pre><code>wget https://raw.githubusercontent.com/steamsv/trojan/master/trojan_centos7.sh && chmod +x trojan_centos7.sh && ./trojan_centos7.sh</code>
+									<p></p>
+									<p>第二步进行dnsmasq分流解锁脚本编号:A4</p>
+									<pre><code>wget https://steamsv.wiki/unlock.sh && chmod +x unlock.sh && ./unlock.sh DNS</code>
+									<p>DNS替换成你想用的</p
+									
+
+									<hr class="major" />
+	
+									<h2>方案三</h2>
+									<p></p>
+									<p>第一步安装v2ray(nginx+ws+tls)（脚本编号:A3）</p>
+									<pre><code>wget https://raw.githubusercontent.com/steamsv/v2ray-ws-tls/master/v2ray_ws_tls.sh && chmod +x v2ray_ws_tls.sh && ./v2ray_ws_tls.sh</code>
+									<p></p>
+									<p>第二步进行dnsmasq分流解锁（脚本编号:A4）</p>
+									<pre><code>wget https://steamsv.wiki/unlock.sh && chmod +x unlock.sh && ./unlock.sh DNS</code>
+									<p>DNS替换成你想用的</p
 
 								</section>
 
