@@ -38,6 +38,11 @@
 										<h2>服务端安装+DNS解锁</h2>
 										<p></p>
 										<p>系统：centos7_64</p>
+										<p></p>
+										<p>注意</p>
+										<p>1.部分系统会自行重置系统DNS导致解锁失败。</p>
+                                        <p>2.可使用chattr +i进行文件加锁，解锁chattr -i</p>
+                                        <p>执行chattr +i /etc/resolv.conf加锁</p>
 									</header>
 
 									<hr class="major" />
@@ -47,10 +52,22 @@
 									<p></p>
 									<p>同时安装v2ray dnsmasq 并进行DNS解锁写入规则 修改规则参考dnsmasq分流（提供技术支持）</p>
 									<pre><code>wget https://steamsv.wiki/install_v2ray_ws_dnsmasq.sh && chmod +x install_v2ray_ws_dnsmasq.sh && ./install_v2ray_ws_dnsmasq.sh</code>
-									<h3>重要</h3>
-									<p>1.部分系统会自行重置系统DNS导致解锁失败。</p>
-                                    <p>2.可使用chattr +i进行文件加锁，解锁chattr -i，部分系统加锁会提示错误等信息，自行百度谷歌</p>
-                                    <p>执行chattr +i /etc/resolv.conf加锁</p>
+									
+									<hr class="major" />
+
+									<h2>方案一</h2>
+									<p>编号:A1</p>
+									<p></p>
+									<p>同时安装v2ray dnsmasq 并进行DNS解锁写入规则 修改规则参考dnsmasq分流（提供技术支持）</p>
+									<pre><code>wget https://steamsv.wiki/install_v2ray_ws_dnsmasq.sh && chmod +x install_v2ray_ws_dnsmasq.sh && ./install_v2ray_ws_dnsmasq.sh</code>
+									
+									<hr class="major" />
+
+									<h2>方案一</h2>
+									<p>编号:A1</p>
+									<p></p>
+									<p>同时安装v2ray dnsmasq 并进行DNS解锁写入规则 修改规则参考dnsmasq分流（提供技术支持）</p>
+									<pre><code>wget https://steamsv.wiki/install_v2ray_ws_dnsmasq.sh && chmod +x install_v2ray_ws_dnsmasq.sh && ./install_v2ray_ws_dnsmasq.sh</code>
 
 								</section>
 
