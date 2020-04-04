@@ -41,7 +41,8 @@
 										<p></p>
 										<p>注意</p>
 										<p>1.部分系统会自行重置系统DNS导致解锁失败。</p>
-                                        <p>2.可给系统DNS配置文件上锁</p>
+										<p>2.可给系统DNS配置文件上锁</p>
+										<p>3.解锁成功后服务器系统DNS应该为127.0.0.1</p>
 										<p>上锁</p>
 										<pre><code>chattr +i /etc/resolv.conf</code>
 										<p>解锁</p>
@@ -54,6 +55,7 @@
 									<p></p>
 									<p style="font-size:20px">同时安装v2ray(ws协议)+dnsmasq分流（脚本编号:A1）</p>
 									<pre><code>wget https://steamsv.wiki/install_v2ray_ws_dnsmasq.sh && chmod +x install_v2ray_ws_dnsmasq.sh && ./install_v2ray_ws_dnsmasq.sh</code>
+									<p style="font-size:20px">注意:安装成功后可以直接使用，最后要给系统DNS上锁哦</p>
 									
 									<hr class="major" />
 
@@ -64,7 +66,8 @@
 									<p></p>
 									<p style="font-size:20px">第二步进行dnsmasq分流解锁脚本编号:A4</p>
 									<pre><code>wget https://steamsv.wiki/unlock.sh && chmod +x unlock.sh && ./unlock.sh DNS</code>
-									<p style="font-size:20px">DNS替换成你想用的</p
+									<p style="font-size:20px">DNS替换成你想用的</p>
+									<p style="font-size:20px">注意:第二步完成后需要重启一下trojan服务端，最后要给系统DNS上锁哦</p>
 									
 									
 									<hr class="major" />
@@ -76,7 +79,8 @@
 									<p></p>
 									<p style="font-size:20px">第二步进行dnsmasq分流解锁（脚本编号:A4）</p>
 									<pre><code>wget https://steamsv.wiki/unlock.sh && chmod +x unlock.sh && ./unlock.sh DNS</code>
-									<p style="font-size:20px">DNS替换成你想用的</p
+									<p style="font-size:20px">DNS替换成你想用的</p>
+										<p style="font-size:20px">注意:第二步完成后需要重启一下v2ray服务端，最后要给系统DNS上锁哦</p>
 
 								</section>
 
@@ -94,7 +98,9 @@
 										<li><a href="index.html">首页</a></li>
 										<li><a href="introduce.html">服务简介（必读）</a></li>
 										<li><a href="tos.html">服务条款（必读）</a></li>
-										<li><a href="mulu.html">成熟的解锁方案</a></li>
+										<li><a href="mulu.html">直接使用的服务端解锁方案</a></li>
+										<li><a href="dnsmasq.html">dnsmasq分流详解</a></li>
+										<li><a href="v2ray.html">v2ray内置DNS解锁详解</a></li>
 										<li><a href="rule.html">各流媒体域名规则</a></li>
 										<li><a href="nslookup.html">自助检查DNS解锁服务器是否正常</a></li>
 										<li><a href="netflix.html">Netfilx设备清晰度支持列表</a></li>
