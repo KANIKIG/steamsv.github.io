@@ -47,8 +47,8 @@
 									<p>2.默认写入netflix相关的规则并指定DNS。</p>
 									<p>3.修改系统DNS为127.0.0.1，作用是使网络域名解析在dnsmasq上进行。</p>
 									<h3>注意</h3>
-									<p>1.部分系统会自行重置系统DNS。</p>
-									<p>2.可使用chattr +i进行文件加锁，解锁chattr -i，部分系统加锁会提示错误等信息，自行百度谷歌</p>
+									<p>1.解锁成功后系统DNS应该为127.0.0.1，部分系统会自行重置系统DNS，或重启VPS系统、重启网络相关功能导致系统DNS被重置使DNS解锁失效。</p>
+									<p>2.可使用chattr +i /etc/resolv.conf进行文件加锁，解锁chattr -i /etc/resolv.conf，C7以外的系统加锁会提示错误等信息，自行百度谷歌</p>
 									<p>3.dnsmasq分流只适用于科学服务端使用系统的DNS。</p>
 
 									<hr class="major" />
