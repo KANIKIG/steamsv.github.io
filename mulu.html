@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>开始</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>回到</strong>首页</a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h2>服务端安装+DNS解锁</h2>
+										<p></p>
+										<p>系统：centos7_64</p>
+										<p></p>
+										<p>注意</p>
+										<p>1.部分系统会自行重置系统DNS导致解锁失败。</p>
+										<p>2.可给系统DNS配置文件上锁</p>
+										<p>3.解锁成功后再加锁，服务器系统DNS应该为127.0.0.1</p>
+										<p>上锁</p>
+										<pre><code>chattr +i /etc/resolv.conf</code>
+										<p>解锁</p>
+										<pre><code>chattr -i /etc/resolv.conf</code>
+									</header>
+
+									<hr class="major" />
+
+									<h2 style="font-size:20px">方案一</h2>
+									<p></p>
+									<p style="font-size:20px">同时安装v2ray(ws协议)+dnsmasq分流（脚本编号:A1）</p>
+									<pre><code>wget https://steamsv.wiki/install_v2ray_ws_dnsmasq.sh && chmod +x install_v2ray_ws_dnsmasq.sh && ./install_v2ray_ws_dnsmasq.sh</code>
+									<p style="font-size:20px">注意:安装成功后可以直接使用，最后要给系统DNS上锁哦</p>
+									
+									<hr class="major" />
+
+									<h2 style="font-size:20px">方案二</h2>
+									<p></p>
+									<p style="font-size:20px">第一步安装trojan（脚本编号:A2）</p>
+									<pre><code>wget https://raw.githubusercontent.com/steamsv/trojan/master/trojan_centos7.sh && chmod +x trojan_centos7.sh && ./trojan_centos7.sh</code>
+									<p></p>
+									<p style="font-size:20px">第二步进行dnsmasq分流解锁脚本编号:A4</p>
+									<pre><code>wget https://steamsv.wiki/unlock.sh && chmod +x unlock.sh && ./unlock.sh DNS</code>
+									<p style="font-size:20px">DNS替换成你想用的</p>
+									<p style="font-size:20px">注意:第二步完成后需要重启一下trojan服务端，最后要给系统DNS上锁哦</p>
+									
+									
+									<hr class="major" />
+
+									<h2 style="font-size:20px">方案三</h2>
+									<p></p>
+									<p style="font-size:20px">第一步安装v2ray(nginx+ws+tls)（脚本编号:A3）</p>
+									<pre><code>wget https://raw.githubusercontent.com/steamsv/v2ray-ws-tls/master/v2ray_ws_tls.sh && chmod +x v2ray_ws_tls.sh && ./v2ray_ws_tls.sh</code>
+									<p></p>
+									<p style="font-size:20px">第二步进行dnsmasq分流解锁（脚本编号:A4）</p>
+									<pre><code>wget https://steamsv.wiki/unlock.sh && chmod +x unlock.sh && ./unlock.sh DNS</code>
+									<p style="font-size:20px">DNS替换成你想用的</p>
+										<p style="font-size:20px">注意:第二步完成后需要重启一下v2ray服务端，最后要给系统DNS上锁哦</p>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+								<nav id="menu">
+									<header class="major">
+										<h2>文档目录</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">首页</a></li>
+										<li><a href="introduce.html">服务简介（必读）</a></li>
+										<li><a href="tos.html">服务条款（必读）</a></li>
+										<li><a href="mulu.html">直接使用的服务端解锁方案</a></li>
+										<li><a href="dnsmasq.html">dnsmasq分流详解</a></li>
+										<li><a href="ddns.html">ddns辅助脚本</a></li>
+										<li><a href="v2ray.html">v2ray内置DNS解锁详解</a></li>
+										<li><a href="rule.html">各流媒体域名规则</a></li>
+										<li><a href="iperf3.html">测试服务器到本地的速度</a></li>
+										<li><a href="nslookup.html">自助检查DNS解锁服务器是否正常</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>VPS商家推荐</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="https://naifei.shop/?sid=cEmnVV" class="image"><img src="images/netflix.jpg" alt="" /></a>
+											<p>专业出售Netflix账号的合租车商家.</p>
+										</article>
+										<article>
+											<a href="https://manage.hostdare.com/aff.php?aff=1438" class="image"><img src="images/hostdare.png" alt="" /></a>
+											<p>适合电信用户个人使用的CN2 GIA VPS.Premium China为优化线路.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>STEAMSV信息</h2>
+									</header>
+									<ul class="mini-posts">
+										<li><a href="https://t.me/dnsunlock" class="button big">TG群组:点击进入</a></li>
+										<li><a href="https://monitor.dnsunlock.com/" class="button big">服务监控网站:点击访问</a></li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
