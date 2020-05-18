@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>dnsmasq</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>回到</strong>首页</a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>dnsmasq分流详解</h1>
+									</header>
+
+									<hr class="major" />
+
+									<h2>一、dnsmasq是什么?</h2>
+									<p>Dnsmasq为小型网络提供网络基础设施：DNS，DHCP，路由器通告和网络引导。它被设计为轻量级且占用空间小，适用于资源受限的路由器和防火墙。它还被广泛用于智能手机和便携式热点的共享，并支持虚拟化框架中的虚拟网络。支持的平台包括Linux（带有glibc和uclibc），Android，* BSD和Mac OS X. Dnsmasq包含在大多数Linux发行版以及FreeBSD，OpenBSD和NetBSD的端口系统中。Dnsmasq提供完整的IPv6支持</p>
+									<h3>本站dnsmasq分流脚本有什么作用？</h3>
+									<p>1.根据系统安装dnsmasq。</p>
+									<p>2.默认写入netflix相关的规则并指定DNS。</p>
+									<p>3.修改系统DNS为127.0.0.1，作用是使网络域名解析在dnsmasq上进行。</p>
+									<h3>注意</h3>
+									<p>1.解锁成功后系统DNS应该为127.0.0.1，部分系统会自行重置系统DNS，或重启VPS系统、重启网络相关功能导致系统DNS被重置使DNS解锁失效。</p>
+									<p>2.可使用chattr +i /etc/resolv.conf进行文件加锁，解锁chattr -i /etc/resolv.conf，C7以外的系统加锁会提示错误等信息，自行百度谷歌</p>
+									<p>3.dnsmasq分流只适用于科学服务端使用系统的DNS。</p>
+
+									<hr class="major" />
+
+									<h2>二、脚本用法。</h2>
+									<p>编号:A2</p>
+									<p>1.最后DNS为变量。</p>
+									<pre><code>wget https://steamsv.wiki/unlock.sh && chmod +x unlock.sh && ./unlock.sh DNS</code>
+									<p>2.已测试过阿里云系统C7、D9、u6。推荐C7，其它两个或多或少有点小问题</p>
+									<p>3.如安装错误，请手动安装，注意报错（百度搜索找寻答案）</p>
+
+									<hr class="major" />
+
+									<h2>三、自定义dnsmasq的配置。</h2>
+									<p>1.打开/etc/dnsmasq.d/unlock.conf。</p>
+									<p>2.按照里面的格式自行添加删除修改。</p>
+									<p>3.修改完成重启dnsmasq。（重启命令systemctl restart dnsmasq）</p>
+									<p>4.最后重启科学服务端</p>
+
+									<hr class="major" />
+
+									<h2>四、不再使用dnsmasq。</h2>
+									<p>1.只需修改系统DNS为默认即可。</p>
+									<p>2.一般默认为8.8.8.8 8.8.4.4。</p>
+									<p>3.修改完成重启科学服务端</p>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+								<nav id="menu">
+									<header class="major">
+										<h2>文档目录</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">首页</a></li>
+										<li><a href="introduce.html">服务简介（必读）</a></li>
+										<li><a href="tos.html">服务条款（必读）</a></li>
+										<li><a href="mulu.html">直接使用的服务端解锁方案</a></li>
+										<li><a href="dnsmasq.html">dnsmasq分流详解</a></li>
+										<li><a href="ddns.html">ddns辅助脚本</a></li>
+										<li><a href="v2ray.html">v2ray内置DNS解锁详解</a></li>
+										<li><a href="rule.html">各流媒体域名规则</a></li>
+										<li><a href="iperf3.html">测试服务器到本地的速度</a></li>
+										<li><a href="nslookup.html">自助检查DNS解锁服务器是否正常</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>VPS商家推荐</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="https://naifei.shop/?sid=cEmnVV" class="image"><img src="images/netflix.jpg" alt="" /></a>
+											<p>专业出售Netflix账号的合租车商家.</p>
+										</article>
+										<article>
+											<a href="https://manage.hostdare.com/aff.php?aff=1438" class="image"><img src="images/hostdare.png" alt="" /></a>
+											<p>适合电信用户个人使用的CN2 GIA VPS.Premium China为优化线路.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>STEAMSV信息</h2>
+									</header>
+									<ul class="mini-posts">
+										<li><a href="https://t.me/dnsunlock" class="button big">TG群组:点击进入</a></li>
+										<li><a href="https://monitor.dnsunlock.com/" class="button big">服务监控网站:点击访问</a></li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
