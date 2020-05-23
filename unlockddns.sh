@@ -239,7 +239,7 @@ else
  ${Green_font_prefix} 16.${Font_color_suffix} 查看当前定时任务
 ————————————" && echo
 	echo
-	read -e -p " 请输入数字 [0-6]:" num
+	read -e -p " 请输入数字 [0-16]:" num
 	case "$num" in
 		1)
 		checkhk1
@@ -290,7 +290,7 @@ else
 		checkds
 		;;
 		*)
-		echo "请输入正确数字 [0-17]"
+		echo "请输入正确数字 [0-16]"
 		start
 		;;
 	esac
