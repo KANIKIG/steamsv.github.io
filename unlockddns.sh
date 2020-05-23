@@ -203,7 +203,7 @@ action=$1
 if [[ "${action}" == "monitor" ]]; then
 	crontab_monitor
 else
-	echo && echo -e "  问题排查脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
+	echo && echo -e "  DDNS辅助脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
   
 ————————————
  ${Green_font_prefix} 1.${Font_color_suffix} 获取hk1-ddns脚本
