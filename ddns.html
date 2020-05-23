@@ -45,13 +45,12 @@
 									<h2 style="font-size:20px">脚本使用方法</h2>
 									<p></p>
 									<p style="font-size:20px">需有python环境，大部分linux自带,使用过unlock.sh脚本</p>
-									<pre><code>wget https://steamsv.wiki/checkdns.py</code>
-									<p style="font-size:20px">注意:下载后不可直接使用，需自行修改内置规则后执行即可，规则需跟unlock.sh生成的配置文件相同，两者相同即可，可自行添加修改删除。</p>
-									<p style="font-size:20px">执行命令</p>
+									<pre><code>wget https://steamsv.wiki/unlockddns.py</code>
+									<p style="font-size:20px">注意:可自定义修改内置规则后执行，规则需跟unlock.sh生成的配置文件相同（可自行修改），两者相同即可，可自行添加修改删除。</p>
+									<p style="font-size:20px">已自动添加定时任务</p>
+									<p style="font-size:20px">手动执行命令</p>
 									<pre><code>python checkdns.py</code>
-									<p style="font-size:20px">添加定时任务执行以下</p>
-									<pre><code>echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root</code>
-									
+
 									<hr class="major" />
 
 									<h2 style="font-size:20px">checkdns.py内置规则模版</h2>
