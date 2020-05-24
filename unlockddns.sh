@@ -44,7 +44,7 @@ checkhk1(){
 	echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/hk1-ddns.py
 	python hk1-ddns.py
-	echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root
+	echo "*/10 * * * * python /root/hk1-ddns.py" >> /var/spool/cron/root
 	echo && echo -e "${Font_color_suffix}"
 
 	start
@@ -54,7 +54,7 @@ checkhk2(){
 	echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/hk2-ddns.py
 	python hk2-ddns.py
-	echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root
+	echo "*/10 * * * * python /root/hk2-ddns.py" >> /var/spool/cron/root
 	echo && echo -e "${Font_color_suffix}"
 
 	start
@@ -64,7 +64,7 @@ checktw1(){
 	echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/tw1-ddns.py
 	python tw1-ddns.py
-	echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root
+	echo "*/10 * * * * python /root/tw1-ddns.py" >> /var/spool/cron/root
 	echo && echo -e "${Font_color_suffix}"
 
 	start	
@@ -74,7 +74,7 @@ checktw2(){
     echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/tw2-ddns.py
 	python tw2-ddns.py
-	echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root
+	echo "*/10 * * * * python /root/tw2-ddns.py" >> /var/spool/cron/root
 	echo && echo -e "${Font_color_suffix}"
 
 	start
@@ -84,7 +84,7 @@ checktw3(){
     echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/tw3-ddns.py
 	python tw3-ddns.py
-	echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root
+	echo "*/10 * * * * python /root/tw3-ddns.py" >> /var/spool/cron/root
 	echo && echo -e "${Font_color_suffix}"
 
 	start
@@ -94,7 +94,7 @@ checkus1(){
     echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/us1-ddns.py
 	python us1-ddns.py
-	echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root
+	echo "*/10 * * * * python /root/us1-ddns.py" >> /var/spool/cron/root
 	echo && echo -e "${Font_color_suffix}"
 
 	start
@@ -104,7 +104,7 @@ checkus2(){
     echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/us2-ddns.py
 	python us2-ddns.py
-	echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root
+	echo "*/10 * * * * python /root/us2-ddns.py" >> /var/spool/cron/root
 	echo && echo -e "${Font_color_suffix}"
 
 	start
@@ -114,7 +114,7 @@ checkus3(){
     echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/us3-ddns.py
 	python us3-ddns.py
-	echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root
+	echo "*/10 * * * * python /root/us3-ddns.py" >> /var/spool/cron/root
 	echo && echo -e "${Font_color_suffix}"
 
 	start
@@ -124,7 +124,7 @@ checkus4(){
     echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/us4-ddns.py
 	python us4-ddns.py
-	echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root
+	echo "*/10 * * * * python /root/us4-ddns.py" >> /var/spool/cron/root
 	echo && echo -e "${Font_color_suffix}"
 
 	start
@@ -134,7 +134,7 @@ checkussg1(){
     echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/sg1-ddns.py
 	python sg1-ddns.py
-	echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root
+	echo "*/10 * * * * python /root/sg1-ddns.py" >> /var/spool/cron/root
 	echo && echo -e "${Font_color_suffix}"
 
 	start
@@ -144,7 +144,7 @@ checksg2(){
     echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/sg2-ddns.py
 	python sg2-ddns.py
-	echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root
+	echo "*/10 * * * * python /root/sg2-ddns.py" >> /var/spool/cron/root
 	echo && echo -e "${Font_color_suffix}"
 
 	start
@@ -154,7 +154,7 @@ checkjp1(){
     echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/jp1-ddns.py
 	python jp1-ddns.py
-	echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root
+	echo "*/10 * * * * python /root/jp1-ddns.py" >> /var/spool/cron/root
 	echo && echo -e "${Font_color_suffix}"
 
 	start
@@ -164,7 +164,7 @@ checkjp2(){
     echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/jp2-ddns.py
 	python jp2-ddns.py
-	echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root
+	echo "*/10 * * * * python /root/jp2-ddns.py" >> /var/spool/cron/root
 	echo && echo -e "${Font_color_suffix}"
 
 	start
@@ -174,7 +174,7 @@ checkuk(){
     echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/uk-ddns.py
 	python uk-ddns.py
-	echo "*/10 * * * * python /root/checkdns.py" >> /var/spool/cron/root
+	echo "*/10 * * * * python /root/uk-ddns.py" >> /var/spool/cron/root
 	echo && echo -e "${Font_color_suffix}"
 
 	start
