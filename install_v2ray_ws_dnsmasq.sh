@@ -144,6 +144,7 @@ uninstall_v2ray(){
 
 install_dnsmasq(){
     yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    yum install bind-utils -y
     yum install -y dnsmasq
     if [ $? -eq 0 ]; then
         read -p "请输入解锁dns:" dns
