@@ -130,7 +130,7 @@ checkus4(){
 	start
 }
 
-checkussg1(){
+checksg1(){
     echo && echo -e "${Red_font_prefix}获取脚本并执行中："
 	wget https://steamsv.wiki/dns/sg1-ddns.py
 	python sg1-ddns.py
