@@ -8,7 +8,7 @@ description: Xizhi's Ideas & Blogs
 #   Google search results) and in your feed.xml site description.
 
 # baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://yourdomain.com" # the base hostname & protocol for your site
+# url: "https://yourdomain.com" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 github_username: LiXizhi
 permalink: /:year/:month/:day/:title/
@@ -19,10 +19,10 @@ newsourceroot: https://github.com/LiXizhi/LiXizhi.github.io/new/master
 #########################################
 # for duoshuo.com commenting system, uncomment following line if you do not want to include duoshuo.com. 
 #duoshuo_shortname: lixizhi
-#duoshuo_url: "http://lixizhi.github.io"
+#duoshuo_url: "https://lixizhi.github.io"
 # disqus.com commenting system. please note that it is exclusive with duoshuo.com
 disqus_shortname: lixizhi
-disqus_url: "http://lixizhi.github.io"
+disqus_url: "https://lixizhi.github.io"
 #########################################
 
 # Build settings
