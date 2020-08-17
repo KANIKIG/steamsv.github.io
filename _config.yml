@@ -1,7 +1,7 @@
 # Site settings
-title: LiXizhi's Personal site
-email: lixizhi@yeah.net
-description: Xizhi's Ideas & Blogs
+title: DNS Unlock
+email: admin@mail.steamsv.com
+description: DNS Unlock Blog
 # > # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
 #   line in _config.yml. It will appear in your document head meta (for
@@ -10,19 +10,19 @@ description: Xizhi's Ideas & Blogs
 # baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "https://yourdomain.com" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
-github_username: LiXizhi
+github_username: steamsv
 permalink: /:year/:month/:day/:title/
 # this is the url root of the view source link on the footer page.
-viewsourceroot: https://github.com/LiXizhi/LiXizhi.github.io/blob/master/
+viewsourceroot: https://github.com/steamsv/steamsv.github.io/blob/master/
 # this is the url root of the create page link on the footer page.
-newsourceroot: https://github.com/LiXizhi/LiXizhi.github.io/new/master
+newsourceroot: https://github.com/steamsv/steamsv.github.io/new/master
 #########################################
 # for duoshuo.com commenting system, uncomment following line if you do not want to include duoshuo.com. 
-#duoshuo_shortname: lixizhi
-#duoshuo_url: "https://lixizhi.github.io"
+#duoshuo_shortname: steamsv
+#duoshuo_url: "https://steamsv.github.io"
 # disqus.com commenting system. please note that it is exclusive with duoshuo.com
-disqus_shortname: lixizhi
-disqus_url: "https://lixizhi.github.io"
+disqus_shortname: steamsv
+disqus_url: "https://steamsv.github.io"
 #########################################
 
 # Build settings
