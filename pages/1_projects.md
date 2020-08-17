@@ -13,7 +13,7 @@ Following are projects started by me.
 
 ## NPL project
 * Started: 2004-present
-* Website: [www.nplproject.com](http://www.nplproject.com)
+* Website: [www.nplproject.com](https://www.nplproject.com)
    * NPL Code Wiki
    * NPL language service and debugger
 
@@ -23,7 +23,7 @@ Throughout the years, I have written over a million lines of code with it. All m
 
 ## Paracraft
 * Started: 2012-present
-* Website: [www.paracraft.cn](http://www.paracraft.cn)
+* Website: [www.paracraft.cn](https://www.paracraft.cn)
    * [ParacraftSDK](https://github.com/LiXizhi/ParaCraftSDK)
    * Self Learning College
 
@@ -35,7 +35,7 @@ I am using it to promote NPL language in self learning college to teach students
 
 ## ParaEngine
 * Started: 2005-present
-* Website: [www.paraengine.com](http://www.paraengine.com)
+* Website: [www.paraengine.com](https://www.paraengine.com)
    * ParaEngine Developer Site (PEDN)
    * MCML: a markup language to create GUI
     
@@ -43,7 +43,7 @@ ParaEngine is a 3d distributed game engine I wrote with C++/NPL. It has become t
 
 ## Magic Haqi
 * Started: 2009-2014 (still operating)
-* Website: [haqi.61.com](http://haqi.61.com)
+* Website: [haqi.61.com](https://haqi.61.com)
    * user forum
    * user videos
 
@@ -52,7 +52,7 @@ Magic Haqi is a free/paid 3D MMORPG published by taomee in November, 2009, allow
 
 ## Magic Haqi2
 * Started: 2012-2013 (still operating)
-* Website: [haqi2.61.com](http://www.61.com/haqi2/home.html)
+* Website: [haqi2.61.com](https://www.61.com/haqi2/home.html)
 
 Same as Magic haqi. 
 
@@ -64,7 +64,7 @@ It used to be hosted on www.pala5.cn. It is a community based world creation gam
 
 ## Kids Movie Creator
 * Started: 2006-2007
-* Website: [download link](http://kids-movie-creator.software.informer.com/)
+* Website: [download link](https://kids-movie-creator.software.informer.com/)
 
 Kids Movie Creator is a very old shareware released in 2006, allowing kids to create 3d world and make movies. 
 
