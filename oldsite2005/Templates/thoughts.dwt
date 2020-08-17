@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+ "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <!-- DW6 -->
 <head>
-<meta http-equiv="Content-Type" content="text/html" />
+<meta https-equiv="Content-Type" content="text/html" />
 <!-- TemplateBeginEditable name="doctitle" -->
 <title>Index of my thoughts</title>
 <!-- TemplateEndEditable -->
@@ -30,7 +30,7 @@
 </div>
 <!-- TemplateEndEditable -->
 <div id="siteInfo"> <a href="mailto:LiXizhi@zju.edu.cn">Email: LiXizhi@zju.edu.cn</a> | Built by Li, Xizhi &copy;2004 ZJU
-<a href="http://www1.com.cn/hosting/template/gbook/index.asp?vh=LiXizhi&key=e1b34aa24a4460441dd1d7729a0aee38" target="_blank">Leave me a message</a>
+<a href="https://www1.com.cn/hosting/template/gbook/index.asp?vh=LiXizhi&key=e1b34aa24a4460441dd1d7729a0aee38" target="_blank">Leave me a message</a>
 </div>
 <br /> 
 </body>
