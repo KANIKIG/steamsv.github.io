@@ -4,6 +4,6 @@ comments: true
 categories: paracraft
 ---
 
-## Empty diary template
+## Empty diary 
 
-Empty post template
+Empty post t
