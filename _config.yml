@@ -22,7 +22,7 @@ newsourceroot: https://github.com/steamsv/steamsv.github.io/new/master
 #duoshuo_url: "https://steamsv.github.io"
 # disqus.com commenting system. please note that it is exclusive with duoshuo.com
 disqus_shortname: steamsv
-disqus_url: "https://steamsv.github.io"
+disqus_url: "https://steamsv.wiki"
 #########################################
 
 # Build settings
