@@ -6,4 +6,4 @@ categories: npl
 
 ## Empty npl 
 
-Empty post template
+nmsl
