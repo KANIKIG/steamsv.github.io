@@ -4,6 +4,6 @@ comments: true
 categories: npl
 ---
 
-## Empty npl tutorial template
+## Empty npl 
 
 Empty post template
