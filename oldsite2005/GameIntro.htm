@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/concise.dwt" codeOutsideHTMLIsLocked="false" -->
+ "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/concise.dwt" codeOutsideHTMLIsLocked="false" -->
 <!-- DW6 -->
 <head>
-<meta http-equiv="Content-Type" content="text/html" />
+<meta https-equiv="Content-Type" content="text/html" />
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Oral presentation on DisGameEngine</title>
 <!-- InstanceEndEditable -->
@@ -34,12 +34,12 @@
     <h1>First of ALL</h1>
     <p>First of all, ParaEngine is a fully functioning 3D computer game engine, with real time graphic rendering system, physics simulation engine and a user friendly 3D world authoring environment. </p>
     <p>
-      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="400" height="325">
+      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="400" height="325">
         <param name="flash_component" value="ImageViewer.swc" />
         <param name="movie" value="paraworld/web/images/ParaImages.swf" />
         <param name="quality" value="high" />
         <param name="FlashVars" value="flashlet={imageLinkTarget:'_blank',captionFont:'Verdana',titleFont:'Verdana',showControls:true,frameShow:false,slideDelay:3,captionSize:10,captionColor:#333333,titleSize:10,transitionsType:'Random',titleColor:#333333,slideAutoPlay:true,imageURLs:['paraworld/web/images/paraworld_bridge2.jpg','paraworld/web/images/paraworld_bridge.jpg','paraworld/web/images/paraworld_indoor2.jpg','paraworld/web/images/paraworld_indoor.jpg','paraworld/web/images/paraworld_mixed.jpg','paraworld/web/images/paraworld_outdoor.jpg','paraworld/web/images/snapshot3.jpg','paraworld/web/images/snapshot2.jpg','paraworld/web/images/paraworld_physics.jpg','paraworld/web/images/snapshot1.jpg'],slideLoop:true,frameThickness:2,frameColor:#333333,bgColor:#FFFFFF,imageCaptions:[],title:'ParaEngine Screen Shots'}" />
-        <embed src="paraworld/web/images/ParaImages.swf" quality="high" flashvars="flashlet={imageLinkTarget:'_blank',captionFont:'Verdana',titleFont:'Verdana',showControls:true,frameShow:false,slideDelay:3,captionSize:10,captionColor:#333333,titleSize:10,transitionsType:'Random',titleColor:#333333,slideAutoPlay:true,imageURLs:['paraworld/web/images/paraworld_bridge2.jpg','paraworld/web/images/paraworld_bridge.jpg','paraworld/web/images/paraworld_indoor2.jpg','paraworld/web/images/paraworld_indoor.jpg','paraworld/web/images/paraworld_mixed.jpg','paraworld/web/images/paraworld_outdoor.jpg','paraworld/web/images/snapshot3.jpg','paraworld/web/images/snapshot2.jpg','paraworld/web/images/paraworld_physics.jpg','paraworld/web/images/snapshot1.jpg'],slideLoop:true,frameThickness:2,frameColor:#333333,bgColor:#FFFFFF,imageCaptions:[],title:'ParaEngine Screen Shots'}" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="400" height="325"></embed>
+        <embed src="paraworld/web/images/ParaImages.swf" quality="high" flashvars="flashlet={imageLinkTarget:'_blank',captionFont:'Verdana',titleFont:'Verdana',showControls:true,frameShow:false,slideDelay:3,captionSize:10,captionColor:#333333,titleSize:10,transitionsType:'Random',titleColor:#333333,slideAutoPlay:true,imageURLs:['paraworld/web/images/paraworld_bridge2.jpg','paraworld/web/images/paraworld_bridge.jpg','paraworld/web/images/paraworld_indoor2.jpg','paraworld/web/images/paraworld_indoor.jpg','paraworld/web/images/paraworld_mixed.jpg','paraworld/web/images/paraworld_outdoor.jpg','paraworld/web/images/snapshot3.jpg','paraworld/web/images/snapshot2.jpg','paraworld/web/images/paraworld_physics.jpg','paraworld/web/images/snapshot1.jpg'],slideLoop:true,frameThickness:2,frameColor:#333333,bgColor:#FFFFFF,imageCaptions:[],title:'ParaEngine Screen Shots'}" pluginspage="https://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="400" height="325"></embed>
       </object>
     </p>
     <p>The demo shows various technologies in the game engine. A great deal of things can be shown about the specific functions of the game engine, but I will present next other ideas of the game engine. As the name implies, ParaEngine is not just a standalone graphics engine. It is based on a distributed game engine framework which allows the content and logics of a continuous and expandable 3D virtual world to be distributed on a large scale and extensible computer network, such as the Internet. Thus I am going to talk about benefits of distributed game engine as well as the tremendous amount of new applications. And from a technology point of view, I will talk a little bit about a new framework of computing which I have implemented in my game engine through a network transparent scripting system.</p>
@@ -64,10 +64,10 @@
     <p>NPL is a language system that I developed during my research on AI. I am planning to write a book on it within a year. NPL scripting system is an important component in ParaEngine. It describes the game world content and logics in a network transparent manner. </p>
     <p>In NPL, logics are encoded in files, which I called Neuron files. These files may be deployed on an arbitrary computer network that the script writer may not know exactly. At runtime, one neuron file may activate other files, and thus forms many file activation chains. Files may also be stimulated by a predefined event in the game world. It is important to note that all file activations are one directional, which means that there is no return message of a file activation call. Yet instead, during the execution session of a file, the file may emit visualization commands. These commands are ensured by their NPL runtimes to be received automatically by the appropriate game engines on the network. This is a similar mechanism improvised by the functioning of the biological neuron networks, which works together to provide our internal visual perceptions as well as interaction with the outside world. The runtime logic of NPL is completely different from that of HTML and sever-side scripting such as ASP or PHP, etc. The tight integration of NPL and ParaEngine makes composing distributed 3D game world possible and very practical. And I believe NPL will eventually become a standard on Internet. </p>
     <p>
-      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="550" height="400">
+      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="550" height="400">
         <param name="movie" value="images/starNPL.swf" />
         <param name=quality value=high />
-        <embed src="images/starNPL.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="550" height="400"></embed>
+        <embed src="images/starNPL.swf" quality=high pluginspage="https://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="550" height="400"></embed>
       </object>
     </p>
     <p>&nbsp;    </p>
@@ -83,7 +83,7 @@
   </div>
 </div>
 <!-- InstanceEndEditable -->
-<div id="siteInfo"> <a href="mailto:lxz1982@hotmail.com">Email: lxz1982@hotmail.com </a> | Built by Li, Xizhi &copy;2004 <a href="http://www1.com.cn/hosting/template/gbook/index.asp?vh=LiXizhi&key=e1b34aa24a4460441dd1d7729a0aee38" target="_blank">Leave me a message</a>
+<div id="siteInfo"> <a href="mailto:lxz1982@hotmail.com">Email: lxz1982@hotmail.com </a> | Built by Li, Xizhi &copy;2004 <a href="https://www1.com.cn/hosting/template/gbook/index.asp?vh=LiXizhi&key=e1b34aa24a4460441dd1d7729a0aee38" target="_blank">Leave me a message</a>
 </div>
 <br /> 
 </body>
