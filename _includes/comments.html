@@ -1,33 +1,20 @@
-{% if page.comments %}
-    <!-- duoshuo.com javascript include code. -->    
-    {% if site.duoshuo_url %}
-      <div class="post-area post comment">
-        <div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ site.duoshuo_url }}{{ page.url }}"></div>
-      </div>
-	  <script type="text/javascript">
-		var duoshuoQuery = {short_name:"{{ site.duoshuo_shortname }}"};
-		(function() {
-		  var ds = document.createElement('script');
-		  ds.type = 'text/javascript';ds.async = true;
-		  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		  ds.charset = 'UTF-8';
-		  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-		})();
-	  </script>
-	{% endif %}
-  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
-  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
-  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
-  <script>
-      const gitalk = new Gitalk({
-          // 这个需要在github上申请一个OAuth application
-          clientID: '888a74580400ce8cab9b',   // GitHub Application Client ID
-          clientSecret: 'b4c8f75280dce0cac86f64c790f9538374325dec',   // GitHub Application Client Secret
-          repo: 'steamsv.github.io', // //存储你评论 issue 的 Github 仓库名
-          owner: 'steamsv',
-          admin: ['steamsv'],    // 这个仓库的管理员
-          distractionFreeMode: true,  // 是否添加全屏遮罩
-          id: window.location.pathname    // 页面的唯一标识，gitalk 会根据这个标识自动创建的issue的标签,我们使用页面的相对路径作为标识
-      })
-      gitalk.render('gitalk-container');    // 渲染Gitalk评论组件
-  </script>   
+<!-- Gitalk 评论 start  -->
+
+<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<div id="gitalk-container"></div>     <script type="text/javascript">
+    var gitalk = new Gitalk({
+
+    // gitalk的主要参数
+		clientID: `888a74580400ce8cab9b`,
+		clientSecret: `b4c8f75280dce0cac86f64c790f9538374325dec`,
+		repo: `steamsv.github.io`,
+		owner: 'steamsv',
+		admin: ['steamsv'],
+		id: 'location.pathname',
+    
+    });
+    gitalk.render('gitalk-container');
+</script> 
+<!-- Gitalk end -->
