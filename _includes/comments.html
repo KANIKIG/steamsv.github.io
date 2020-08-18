@@ -9,28 +9,28 @@
 		(function() {
 		  var ds = document.createElement('script');
 		  ds.type = 'text/javascript';ds.async = true;
-		  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'https:') + '//static.duoshuo.com/embed.js';
+		  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
 		  ds.charset = 'UTF-8';
 		  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
 		})();
 	  </script>
 	{% endif %}
     <!-- disqus.com javascript include code. -->
-	{% if site.disqus_url %}
-    <div class="post-area post comment">
-        <div id="disqus_thread"></div>
-    </div>
-	<script>
-		var disqus_config = function () {
-			this.page.url = "{{ site.disqus_url }}{{ page.url }}"; 
-			this.page.identifier = "{{ page.id }}"; 
-		};
-		(function() {
-			var d = document, s = d.createElement('script');
-			s.src = '//{{ site.disqus_shortname }}.disqus.com/embed.js';
-			s.setAttribute('data-timestamp', +new Date());
-			(d.head || d.body).appendChild(s);
-		})();
-	</script>
-	{% endif %}
+	{{ if (.Params.gitment) }}
+        <div id="git-comments"></div>
+        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+        <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+        <script>
+            var gitment = new Gitment({
+                id: '{{ .Slug }}',  // 可选, 默认为 location.href
+                owner: '你的 GitHub ID',
+                repo: '存储评论的 repo',
+                oauth: {
+                    client_id: '你的 client ID',
+                     client_secret: '你的 client secret',
+                }
+            })
+        gitment.render('git-comments')
+    </script>
+    {{ end }}
 {% endif %}    
