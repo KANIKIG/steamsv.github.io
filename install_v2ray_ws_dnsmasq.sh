@@ -30,7 +30,7 @@ install_v2ray(){
         rm -rf /usr/local/etc/v2ray
     fi
     if [[ -d /etc/v2ray ]];then
-        rm -rf /etc/v2ray
+        rm -rf /usr/local/etc/v2ray
     fi
     mkdir -p /usr/local/etc/v2ray && cd /usr/local/etc/v2ray
     yum makecache
@@ -50,9 +50,9 @@ install_v2ray(){
         exit 4
     fi
     # 清除临时文件
-    rm -rf /usr/local/etc/v2ray
 
     rm -f /usr/local/etc/v2ray/config.json
+    mkdir /usr/local/etc/v2ray/config.json
     cat>/usr/local/etc/v2ray/config.json<<EOF
 {
     "inbound": {
