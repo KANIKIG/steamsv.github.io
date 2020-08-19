@@ -50,10 +50,7 @@ install_v2ray(){
         exit 4
     fi
     # 清除临时文件
-
-    rm -f /usr/local/etc/v2ray/config.json
-    mkdir /usr/local/etc/v2ray/config.json
-    cat>/usr/local/etc/v2ray/config.json<<EOF
+    cat>/usr/local/etc/v2ray/config.json<EOF
 {
     "inbound": {
         "allocate": {
