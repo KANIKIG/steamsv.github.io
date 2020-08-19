@@ -26,30 +26,34 @@ judge(){
 }
 
 install_v2ray(){
-    if [[ -d /root/v2ray ]];then
-        rm -rf /root/v2ray
+    if [[ -d /usr/local/etc/v2ray ]];then
+        rm -rf /usr/local/etc/v2ray
     fi
     if [[ -d /etc/v2ray ]];then
         rm -rf /etc/v2ray
     fi
-    mkdir -p /root/v2ray && cd /root/v2ray
-    wget -N --no-check-certificate https://install.direct/go.sh
+    mkdir -p /usr/local/etc/v2ray && cd /usr/local/etc/v2rayNG一键导入
+    yum makecache
+    yum install curl -y
+    curl -O https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
+    curl -O https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-dat-release.sh
 
     ## wget http://install.direct/go.sh
 
-    if [[ -f go.sh ]];then
-        bash go.sh --remove
-        bash go.sh --force
+    if [[ -f install-release.sh ]];then
+        bash install-release.sh --remove
+        bash install-release.sh
+        bash install-dat-release.sh
         judge "安装 V2ray"
     else
         echo -e "${Error} ${RedBG} V2ray 安装文件下载失败，请检查下载地址是否可用 ${Font}"
         exit 4
     fi
     # 清除临时文件
-    rm -rf /root/v2ray
+    rm -rf /usr/local/etc/v2ray
 
-    rm -f /etc/v2ray/config.json
-    cat>/etc/v2ray/config.json<<EOF
+    rm -f /usr/local/etc/v2ray/config.json
+    cat>/usr/local/etc/v2ray/config.json<<EOF
 {
     "inbound": {
         "allocate": {
