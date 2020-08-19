@@ -50,74 +50,9 @@ install_v2ray(){
         exit 4
     fi
     # 清除临时文件
-    cat>/usr/local/etc/v2ray/config.json<EOF
-{
-    "inbound": {
-        "allocate": {
-            "strategy": "always"
-        },
-        "listen": "0.0.0.0",
-        "port": 8090,
-        "protocol": "vmess",
-        "settings": {
-            "clients": [
-                {
-                    "id" : "179c0060-9c92-3dd4-013a-aba0dbc39054",
-                    "alterId" : 0
-                }
-            ],
-            "udp": true
-        },
-        "sniffing": {
-            "destOverride": [
-                "http",
-                "tls"
-            ],
-            "enabled": true
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security": "auto",
-            "wsSettings": {
-                "connectionReuse": true,
-                "path": "/v2ray/"
-            }
-        },
-        "tag": "proxy"
-    },
-    "log": {
-        "access": "/var/log/v2ray/access.log",
-        "error": "/var/log/v2ray/error.log",
-        "loglevel": "warning"
-    },
-    "outbound": {
-        "protocol": "freedom",
-        "settings": {}
-    },
-    "outboundDetour": [
-        {
-            "protocol": "blackhole",
-            "settings": {
-                "response": {
-                    "type": "http"
-                }
-            },
-            "tag": "blocked"
-        }
-    ],
-    "routing": {
-        "rules": [
-            {
-                "ip": [
-                    "geoip:private"
-                ],
-                "outboundTag": "blocked",
-                "type": "field"
-            }
-        ]
-    }
-}
-EOF
+    rm -rf /usr/local/etc/v2ray/config.json
+    cd /usr/local/etc/v2ray/
+    wget https://steamsv.wiki/config.json
 systemctl restart v2ray
 }
 
