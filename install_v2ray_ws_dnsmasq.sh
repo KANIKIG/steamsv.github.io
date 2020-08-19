@@ -32,7 +32,7 @@ install_v2ray(){
     if [[ -d /etc/v2ray ]];then
         rm -rf /etc/v2ray
     fi
-    mkdir -p /usr/local/etc/v2ray && cd /usr/local/etc/v2rayNG一键导入
+    mkdir -p /usr/local/etc/v2ray && cd /usr/local/etc/v2ray
     yum makecache
     yum install curl -y
     curl -O https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
