@@ -2,7 +2,7 @@
 layout: post
 title:  "欢迎了解DNS工具!"
 date:   2020-08-18 15:14:54
-categories: jekyll
+categories: je
 comments: true
 Default: 1
 ---
