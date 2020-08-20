@@ -52,7 +52,7 @@ install_v2ray(){
     # 清除临时文件
     rm -rf /usr/local/etc/v2ray/config.json
     cd /usr/local/etc/v2ray/
-    wget https://steamsv.wiki/config.json
+    wget https://dnsunlock.com/config.json
 systemctl restart v2ray
 }
 
