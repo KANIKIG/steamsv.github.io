@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "useful links"
+title:  "AdGuardHome"
 date:   2020-08-18
 comments: true
 categories: AdGuardHome
