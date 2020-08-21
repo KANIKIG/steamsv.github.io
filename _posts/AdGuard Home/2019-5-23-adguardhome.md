@@ -119,20 +119,20 @@ I如果您运行的是 **Linux**, 有一种安全且简单的方法来安装AdGu
 AdGuard Home提供了许多现成的功能，无需安装和配置其他软件。 我们希望它简单到可以随意使用的地方。
 
 > 免责声明：可以通过安装其他软件或手动使用SSH终端并重新配置Pi-Hole所包含的一种实用程序，将某些列出的功能添加到Pi-Hole中。 但是，我们认为，这不能合法地视为Pi-Hole的功能。
-| 特色                                                                 | AdGuard&nbsp;Home | Pi-Hole                                                |
+| Feature                                                                 | AdGuard&nbsp;Home | Pi-Hole                                                |
 |-------------------------------------------------------------------------|--------------|--------------------------------------------------------|
-| 屏蔽广告和跟踪器                                               | ✅            | ✅                                                      |
-| 自定义阻止列表                                                  | ✅            | ✅                                                      |
-| 内置DHCP服务器                                                    | ✅            | ✅                                                      |
-| Admin界面的HTTPS                                           | ✅            | 有点，但是您需要手动配置lighttpd |
-| 加密的DNS上游服务器（HTTPS上的DNS，TLS上的DNS，DNSCrypt） | ✅            | ❌ (需要其它软件）                       |
-| 跨平台                                                          | ✅            | ❌ (不是本地的，只能通过Docker)                      |
-| 作为基于HTTPS的DNS或基于TLS的DNS服务器运行                      | ✅            | ❌ (需要其它软件)                       |
-| 阻止网络钓鱼和恶意软件域                                   | ✅            | ❌ (需要非默认阻止列表)                    |
-| 家长控制（阻止成人域）                               | ✅            | ❌                                                      |
-| 在搜索引擎上强制安全搜索                                     | ✅            | ❌                                                      |
-| 每个客户端配置                                       | ✅            | ✅                                                      |
-| 访问设置（选择谁可以使用AGH DNS）                            | ✅            | ❌                                                      |
+| Blocking ads and trackers                                               | ✅            | ✅                                                      |
+| Customizing blocklists                                                  | ✅            | ✅                                                      |
+| Built-in DHCP server                                                    | ✅            | ✅                                                      |
+| HTTPS for the Admin interface                                           | ✅            | Kind of, but you'll need to manually configure lighthttpd |
+| Encrypted DNS upstream servers (DNS-over-HTTPS, DNS-over-TLS, DNSCrypt) | ✅            | ❌ (requires additional software)                       |
+| Cross-platform                                                          | ✅            | ❌ (not natively, only via Docker)                      |
+| Running as a DNS-over-HTTPS or DNS-over-TLS server                      | ✅            | ❌ (requires additional software)                       |
+| Blocking phishing and malware domains                                   | ✅            | ❌ (requires non-default blocklists)                    |
+| Parental control (blocking adult domains)                               | ✅            | ❌                                                      |
+| Force Safe search on search engines                                     | ✅            | ❌                                                      |
+| Per-client (device) configuration                                       | ✅            | ✅                                                      |
+| Access settings (choose who can use AGH DNS)                            | ✅            | ❌                                                      |
 
 <a id="comparison-adblock"></a>
 ### AdGuard Home与传统广告拦截器相比如何
