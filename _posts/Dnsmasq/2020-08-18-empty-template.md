@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-categories: diary
+categories: Dnsmasq
 ---
 
 ## 模版1
