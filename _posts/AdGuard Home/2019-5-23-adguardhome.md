@@ -200,7 +200,7 @@ ip为您的VPS对外的公网IP
 
 您可以通过运行以下命令来验证其是否正常运行：
 ```bash
-nslookup doubleclick.net 127.0.0.1
+nslookup google.com 127.0.0.1
 ```
 
 如果一切正常，您将获得以下输出：
@@ -209,8 +209,7 @@ Using domain server:
 Name: 127.0.0.1
 Address: 127.0.0.1#53
 Aliases:
-
-Host doubleclick.net not found: 3(NXDOMAIN)
+......
 ```
 
 ## 配置设备以使用AdGuard Home
