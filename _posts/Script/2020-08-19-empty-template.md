@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-categories: npl
+categories: Script
 id: 2
 ---
 
